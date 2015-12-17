@@ -7,4 +7,5 @@ public interface DispatchStrategy {
 
 	// 流量试验中参数怎么修正
 	public Object[] adjust(Object[] args);
+	
 }

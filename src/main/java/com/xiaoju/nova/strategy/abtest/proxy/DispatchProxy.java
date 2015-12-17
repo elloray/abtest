@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.log4j.Logger;
 
 import com.xiaoju.nova.strategy.abtest.Constrants;
+import com.xiaoju.nova.strategy.abtest.statistics.Collector;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -16,16 +17,22 @@ public class DispatchProxy implements MethodInterceptor {
 
 	private Method MinorMethod;
 	private DispatchStrategy dispatchStrategy;
+	private Collector collector;
 	// 计数器
 	private volatile double counter = 0;
 
 	public void setMinorMethod(Method MinorMethod) {
 		this.MinorMethod = MinorMethod;
 	}
+
 	public void setDispatchStrategy(DispatchStrategy dispatchStrategy) {
 		this.dispatchStrategy = dispatchStrategy;
 	}
-	
+
+	public void setCollector(Collector collector) {
+		this.collector = collector;
+	}
+
 	public Object intercept(Object obj, Method method, Object[] args,
 			MethodProxy proxy) throws Throwable {
 		if (MinorMethod == null) {
@@ -33,7 +40,8 @@ public class DispatchProxy implements MethodInterceptor {
 				if (dispatch()) {
 					logger.info("leads to experinment flow : "
 							+ method.getName());
-					return proxy.invokeSuper(obj, dispatchStrategy.adjust(args));
+					return proxy
+							.invokeSuper(obj, dispatchStrategy.adjust(args));
 				}
 			}
 			logger.info("leads to normal flow : " + method.getName());

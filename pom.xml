@@ -36,5 +36,10 @@
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.12</version>
 		</dependency>
+		<dependency>
+			<groupId>com.xiaoju.ecom</groupId>
+			<artifactId>BeanstalkClient</artifactId>
+			<version>0.2.2-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

@@ -14,6 +14,6 @@ public class testClass {
 	}
 
 	public int add2(int a, int b) {
-		return 2 * a + b;
+		return 10 * a + b;
 	}
 }
