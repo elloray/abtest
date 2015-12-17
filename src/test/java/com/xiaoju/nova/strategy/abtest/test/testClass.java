@@ -1,7 +1,7 @@
 package com.xiaoju.nova.strategy.abtest.test;
 
-import com.xiaoju.nova.strategy.abtest.annotation.DispatchByMethod;
-import com.xiaoju.nova.strategy.abtest.annotation.DispatchByParam;
+import com.github.elloray.abtest.annotation.DispatchByMethod;
+import com.github.elloray.abtest.annotation.DispatchByParam;
 
 
 

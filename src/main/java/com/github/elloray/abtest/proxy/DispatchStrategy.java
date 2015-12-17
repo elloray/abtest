@@ -1,4 +1,4 @@
-package com.xiaoju.nova.strategy.abtest.proxy;
+package com.github.elloray.abtest.proxy;
 
 public interface DispatchStrategy {
 

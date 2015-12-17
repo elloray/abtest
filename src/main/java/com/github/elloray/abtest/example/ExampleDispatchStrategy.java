@@ -1,6 +1,6 @@
-package com.xiaoju.nova.strategy.abtest.example;
+package com.github.elloray.abtest.example;
 
-import com.xiaoju.nova.strategy.abtest.proxy.DispatchStrategy;
+import com.github.elloray.abtest.proxy.DispatchStrategy;
 
 public class ExampleDispatchStrategy implements DispatchStrategy {
 

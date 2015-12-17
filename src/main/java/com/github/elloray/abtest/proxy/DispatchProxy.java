@@ -1,12 +1,12 @@
-package com.xiaoju.nova.strategy.abtest.proxy;
+package com.github.elloray.abtest.proxy;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.log4j.Logger;
 
-import com.xiaoju.nova.strategy.abtest.Constrants;
-import com.xiaoju.nova.strategy.abtest.statistics.Collector;
+import com.github.elloray.abtest.Constrants;
+import com.github.elloray.abtest.statistics.Collector;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;

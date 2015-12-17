@@ -1,4 +1,4 @@
-package com.xiaoju.nova.strategy.abtest.exception;
+package com.github.elloray.abtest.exception;
 
 public class ColletorFullException extends RuntimeException{
 

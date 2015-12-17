@@ -1,7 +1,7 @@
 package com.xiaoju.nova.strategy.abtest.test;
 
-import com.xiaoju.nova.strategy.abtest.example.ExampleDispatchStrategy;
-import com.xiaoju.nova.strategy.abtest.proxy.ProxyFactory;
+import com.github.elloray.abtest.example.ExampleDispatchStrategy;
+import com.github.elloray.abtest.proxy.ProxyFactory;
 
 public class testProxy {
 	public static void main(String[] args) throws InterruptedException {

@@ -1,4 +1,4 @@
-package com.xiaoju.nova.strategy.abtest.proxy;
+package com.github.elloray.abtest.proxy;
 
 import java.lang.reflect.Method;
 
@@ -8,7 +8,7 @@ import net.sf.cglib.proxy.Callback;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.NoOp;
 
-import com.xiaoju.nova.strategy.abtest.annotation.DispatchByMethod;
+import com.github.elloray.abtest.annotation.DispatchByMethod;
 
 public class ProxyFactory {
 

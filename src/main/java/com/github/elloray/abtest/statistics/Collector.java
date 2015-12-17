@@ -1,4 +1,4 @@
-package com.xiaoju.nova.strategy.abtest.statistics;
+package com.github.elloray.abtest.statistics;
 
 public interface Collector {
 	public boolean collectMajor(Object[] objects);

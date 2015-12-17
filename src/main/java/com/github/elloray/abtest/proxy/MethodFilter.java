@@ -1,10 +1,10 @@
-package com.xiaoju.nova.strategy.abtest.proxy;
+package com.github.elloray.abtest.proxy;
 
 import java.lang.reflect.Method;
 
 import net.sf.cglib.proxy.CallbackFilter;
 
-import com.xiaoju.nova.strategy.abtest.annotation.DispatchByParam;
+import com.github.elloray.abtest.annotation.DispatchByParam;
 
 public class MethodFilter implements CallbackFilter {
 
